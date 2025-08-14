@@ -21,7 +21,7 @@ String wifiSsid = "";
 String wifiPass = "";
 
 void tryConnect() {
-  if (wifiSsid && wifiPass) {
+  if (wifiSsid.length() > 0 && wifiPass.length() > 0) {
     initWifi(wifiSsid.c_str(), wifiPass.c_str());
   }
 }
